@@ -75,10 +75,9 @@ print(avgstepsinday_plot)
 ```{r Q5}
 # Q5
 avgstepsinday_max <- avgstepsinday[which(avgstepsinday[ , 2] == max(avgstepsinday[ , 2])), ]
-avgstepsinday_max <- avgstepsinday_max[ , 1]
 ```
 
-The maximum average number of steps in a day is `r avgstepsinday_max`.
+The maximum average number of steps in a day is `r avgstepsinday_max[ , 2]` of the interval `r avgstepsinday_max[ , 1]`.
 
 ## Q7: Histogram of the total number of steps taken each day after missing values are imputed
 
